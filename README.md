@@ -1,1 +1,1 @@
-# Enoch's Personal Website {style=text-align:center}
+# Enoch's Personal Website
