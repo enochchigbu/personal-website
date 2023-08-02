@@ -1,1 +1,1 @@
-<h1 style="text-align: center;"> # Enoch's Personal Website </h1>
+# Enoch's Personal Website {style=text-align:center}
