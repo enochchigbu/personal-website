@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Home, Skills, Contact, About } from './pages';
 import { PageSelector } from './components';
 import './App.css';

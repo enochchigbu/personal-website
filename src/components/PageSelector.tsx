@@ -20,8 +20,6 @@ interface ComponentProps{ page : Pages }
 
 class PageSelector extends Component<ComponentProps>{
     render() {
-        const { page } = this.props;
-        
         return(
             <div>
                 <button>
