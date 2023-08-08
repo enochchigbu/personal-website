@@ -1,18 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, Component } from 'react';
 import { Home, Skills, Contact, About } from './pages';
-import { PageSelector } from './components';
+import { PageNavigator } from './components';
 import './App.css';
 
 function App() {
   return (
     <>
     <header>
-        <PageSelector>
-        </PageSelector>
+        <PageNavigator/>
     </header>
-    <Home>
-    </Home>
     </>
   );
 }

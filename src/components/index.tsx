@@ -1,3 +1,3 @@
-import PageSelector from "./PageSelector";
+import PageNavigator from "./PageNavigator";
 
-export { PageSelector };
+export { PageNavigator };
