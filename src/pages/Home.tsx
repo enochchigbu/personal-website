@@ -6,7 +6,7 @@ class Home extends Component{
         return(
             <div>
                 <header className="header">
-                    Hello, my name is Enoch
+                    Hi everyone, my name is Enoch. I am a software engineer student who is looking for 
                 </header>
             </div>
         )

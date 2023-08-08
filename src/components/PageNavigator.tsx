@@ -21,7 +21,7 @@ function PageNavigatior() {
     const [currPage, setPage] = useState<page>('Home');
     return(
         <>
-        <div>
+        <div className='container'>
             <button onClick = {e => setPage('Home')}>
                 Home
             </button>
