@@ -6,11 +6,12 @@ import './PageNavigator.css';
  * 
  * This is the component that handles page selection and switching.
  * 
- * 4 States ( Name : Function ):
+ * 5 States ( Name : Function ):
  *      - Home : The Home page, first page a user sees
  *      - About : A page containing background info
  *      - Contact : Page that contains my contact info
- *      - Skills : Page that displays my technical skiils / projects
+ *      - Skills : Page that displays my technical skiils
+ *      - Projects : Page that displays the projects I have made
  *          
  *      Note: This can be added later after you do more projects
  */
