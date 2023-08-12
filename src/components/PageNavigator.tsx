@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Home, Skills, Contact, About } from '../pages';
+import { Home, Skills, Contact, About, Projects } from '../pages';
 import './PageNavigator.css';
 /**
  * Page Navigator Component
@@ -15,7 +15,7 @@ import './PageNavigator.css';
  *      Note: This can be added later after you do more projects
  */
 
-type page = "Home" | "Skills" | "About" | "Contact"
+type page = "Home" | "Skills" | "About" | "Contact" | "Projects"
 
 function PageNavigatior() {
     const [currPage, setPage] = useState<page>('Home');
@@ -32,7 +32,10 @@ function PageNavigatior() {
                 Contact
             </button >
             <button onClick = {e => setPage('Skills')}>
-                Skills/Projects
+                Skills
+            </button>
+            <button onClick = {e => setPage('Projects')}>
+                Projects
             </button>
         </div>
         <div>
@@ -43,17 +46,21 @@ function PageNavigatior() {
 }
 
 function RenderPage({ p } : {p : page}) {
-    if (p === "Home"){ 
-      return (<Home/> );
-    }
-    else if (p === "About") {
-      return (<About/>);
-    }
-    else if (p === "Contact"){
-      return( <Contact/>);
-    }
-    else { 
-      return (<Skills/>);
+    switch(p){
+        case 'About':
+            return <About/>
+
+        case 'Contact':
+            return <Contact/>
+
+        case 'Home':
+            return <Home/>
+
+        case 'Projects':
+            return <Projects/>
+
+        case 'Skills':
+            return <Skills/>
     }
 }
   
