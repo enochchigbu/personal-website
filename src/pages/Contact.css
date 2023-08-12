@@ -1,0 +1,25 @@
+.container {
+    display: flex;  
+}
+
+.input-area {
+    flex: 1;
+}
+
+.input-container{
+    padding: 20px;
+}
+
+.input-container > header{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-field {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.text-area {
+    flex: 1;
+}
