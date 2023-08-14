@@ -1,4 +1,4 @@
-.container {
+.contact-container {
     display: flex;  
 }
 
@@ -6,11 +6,11 @@
     flex: 1;
 }
 
-.input-container{
+.input-container {
     padding: 20px;
 }
 
-.input-container > header{
+.input-container > header {
     padding-bottom: 10px;
     font-size: 20px;
 }
@@ -31,16 +31,50 @@
     border-radius: 10px;
     background: linear-gradient(145deg, #3051F1 10%, #C92BB7 70%) no-repeat;
     padding: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+.insta-button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.insta-logo {
+    width: 200px;
+    height: auto;
+    mix-blend-mode: darken;
 }
 
 .linkedin-button {
     border-radius: 10px;
-    background-color: blue;
-    padding: 20px;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+.linkedin-button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.linkedin-logo {
+    width: 220px;
+    height: auto;
+    mix-blend-mode: darken;
 }
 
 .github-button {
     border-radius: 10px;
-    background-color: blue;
-    padding: 20px;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.github-button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.github-logo {
+    width: 235px;
+    height: auto;
+    mix-blend-mode: multiply;
 }
