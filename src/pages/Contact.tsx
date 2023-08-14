@@ -13,6 +13,16 @@ class Contact extends Component{
             <div className='container'>
                 <div className='text-area'>
                     <p>Contact Me</p>
+                    <p>Email: enochchigbu@gmail.com</p>
+                    <div>
+                        <button className='insta-button'>Instagram</button>
+                    </div>
+                    <div>
+                        <button className='linkedin-button'>LinkedIn</button>
+                    </div>
+                    <div>
+                        <button className='github-button'>Github</button>
+                    </div>
                 </div>
                 <div className='input-area'>
                     <div className='input-container'>

@@ -1,8 +1,8 @@
 body {
-  background-image: linear-gradient(to left, purple , black);
+  background-color: black;
   text-align: center;
-  font-family: Palatino;
   justify-content: center;
-  color: white
+  font-family: Rubik;
+  color: white;
 }
 

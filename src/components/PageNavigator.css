@@ -1,17 +1,16 @@
 button {
     font-size : 20px;
     color:white;
-    background-color: black;
-    border-radius: 10px;
+    background-color: red;
     transition-duration: 0.5s;
+    border: none;
     margin: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 button:hover {
     background-color: white;
-    color:black;
+    color:red;
 }
 
 .container {

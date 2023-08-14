@@ -1,3 +1,8 @@
-header {
-    font-size: 100spx;
+.container{
+    display: flex;
+}
+
+.intro {
+    font-size: 25px;
+    color: white;
 }

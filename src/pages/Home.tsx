@@ -4,11 +4,15 @@ import './Home.css';
 class Home extends Component{
     render() {
         return(
-            <div>
-                <header className="header">
-                    Hi everyone, my name is Enoch. I am a software engineer student who is looking for 
-                </header>
-            </div>
+            <div className='container'>
+                <div className='intro-text'>
+                    Hi! I'm Enoch, a current college student
+                    and an aspiring software engineer.
+                </div>
+                <div className='pfp-image'>
+
+                </div>
+            </div>  
         )
     }
 }

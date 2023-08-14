@@ -22,4 +22,25 @@
 
 .text-area {
     flex: 1;
+    text-align: left;
+    justify-content: center;
+    padding-left: 200px;
+}
+
+.insta-button {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3051F1 10%, #C92BB7 70%) no-repeat;
+    padding: 15px;
+}
+
+.linkedin-button {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 20px;
+}
+
+.github-button {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 20px;
 }
