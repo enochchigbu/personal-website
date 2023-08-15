@@ -1,5 +1,8 @@
-body {
-  background-color: black;
+.app-container {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(0,86,236,1) 92%);
+  height: 100%;
+  background-size: cover;
   text-align: center;
   justify-content: center;
   font-family: Rubik;

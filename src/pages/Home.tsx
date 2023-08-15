@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import { selfPortrait } from '../assets';
 import './Home.css';
 
 class Home extends Component{
     render() {
         return(
-            <div className='container'>
+            <div className='home-container'>
                 <div className='intro-text'>
-                    Hi! I'm Enoch, a current college student
-                    and an aspiring software engineer.
+                    Hello, I'm Enoch
                 </div>
-                <div className='pfp-image'>
-
+                <div style={{ flex:1 }}>
+                    <img className='profile-pic' src={selfPortrait} alt='self portrait'></img>
                 </div>
             </div>  
         )

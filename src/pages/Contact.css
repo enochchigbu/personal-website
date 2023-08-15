@@ -21,6 +21,8 @@
 }
 
 .text-area {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     text-align: left;
     justify-content: center;
