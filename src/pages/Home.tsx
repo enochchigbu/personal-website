@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { selfPortrait } from '../assets';
-import './Home.css';
+import './styles/Home.css';
 
 class Home extends Component{
     render() {

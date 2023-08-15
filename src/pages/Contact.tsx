@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Contact.css';
+import './styles/Contact.css';
 import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 
 /**

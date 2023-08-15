@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Home, Skills, Contact, About, Projects } from '../pages';
-import './PageNavigator.css';
+import './styles/PageNavigator.css';
 /**
  * Page Navigator Component
  * 
