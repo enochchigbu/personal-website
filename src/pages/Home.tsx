@@ -7,7 +7,8 @@ class Home extends Component{
         return(
             <div className='home-container'>
                 <div className='intro-text'>
-                    Hello, I'm Enoch
+                    Hi Everyone!
+                    <p>My name is Enoch. Im a</p>
                 </div>
                 <div style={{ flex:1 }}>
                     <img className='profile-pic' src={selfPortrait} alt='self portrait'></img>
@@ -15,6 +16,10 @@ class Home extends Component{
             </div>  
         )
     }
+}
+
+function introText() {
+
 }
 
 export default Home;

@@ -23,26 +23,26 @@ function PageNavigatior() {
     return(
         <>
         <div className='nav-container'>
-            <button className={currPage === 'Home' ? 'selected-button' : ''} 
+            <button className={currPage === 'Home' ? 'selected' : 'non-selected'} 
             onClick = {e => setPage('Home')}>
                 Home
             </button>
-            <button className={currPage === 'About' ? 'selected-button' : ''}
+            <button className={currPage === 'About' ? 'selected' : 'non-selected'}
             onClick = {e => setPage('About')}>
                 About Me
             </button>
-            <button className={currPage === 'Contact' ? 'selected-button' : ''}
-            onClick = {e => setPage('Contact')}>
-                Contact
-            </button >
-            <button className={currPage === 'Skills' ? 'selected-button' : ''}
+            <button className={currPage === 'Skills' ? 'selected' : 'non-selected'}
             onClick = {e => setPage('Skills')}>
-                Skills
+                My Skills
             </button>
-            <button className={currPage === 'Projects' ? 'selected-button' : ''}
+            <button className={currPage === 'Contact' ? 'selected' : 'non-selected'}
+            onClick = {e => setPage('Contact')}>
+                Contact Me
+            </button >
+            {/* <button className={currPage === 'Projects' ? 'selected-button' : ''}
             onClick = {e => setPage('Projects')}>
                 Projects
-            </button>
+            </button> */}
         </div>
         <div>
             <RenderPage p = {currPage}/>

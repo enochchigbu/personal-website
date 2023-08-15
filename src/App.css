@@ -1,11 +1,14 @@
+html, body {
+  height:100%;
+} 
+
 .app-container {
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(0,86,236,1) 92%);
-  height: 100%;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,86,236,1) 100%);
+  height: 100vh;
   text-align: center;
   justify-content: center;
-  font-family: Rubik;
+  font-family: Helvetica;
   color: white;
 }
 
