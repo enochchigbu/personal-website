@@ -8,26 +8,28 @@ class Skills extends Component{
         return(
             <div className='grid-container'>
                 <div>
-                    <img className = 'python-img' 
+                    <img className='img' 
                     src={pythonLogo} alt='python-logo'/>
                 </div>
                 <div>
-                    <img className='java-img'
+                    <img className='img'
                     src={javaLogo} alt='java-logo'/>
                 </div>
                 <div>
-                    <img className='typescript-img'
+                    <img className='img'
                     src={typescriptLogo} alt='typescript-logo'/>
                 </div>
                 <div>
-                    <img src={htmlCssLogo} alt='html-css-logo'/>
+                    <img className='img'
+                    src={htmlCssLogo} alt='html-css-logo'/>
                 </div>
                 <div>
-                    <img src={reactLogo} className='react-img'
-                    alt='react-logo'/>
+                    <img className='img'
+                    src={reactLogo} alt='react-logo'/>
                 </div>
                 <div>
-                    <img src={angularLogo} alt='angular-logo'/>
+                    <img className='img'
+                    src={angularLogo} alt='angular-logo'/>
                 </div>
             </div>
         )

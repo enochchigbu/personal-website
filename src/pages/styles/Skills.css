@@ -6,20 +6,7 @@
     padding: 50px;
 }
 
-.python-img {
-    filter: brightness(1.25);  
-}
-
-.java-img {
-    width: 200px;
-    height: auto;
-}
-.typescript-img {
-    width: 200px;
-    height: auto;
-}
-
-.react-img {
-    width: 200px;
-    height: auto;
+img {
+    height: 70px;
+    width: auto;
 }

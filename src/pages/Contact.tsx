@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './styles/Contact.css';
 import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 
@@ -57,6 +57,11 @@ class Contact extends Component{
             </div>
         )
     }
+}
+
+function acceptForm({name, email, message } : 
+    {name: string, email: string, message: string}){
+    
 }
 
 export default Contact;
