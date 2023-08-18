@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 import './styles/Contact.css';
+import { TypedText } from '../components';
 import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 
 /**
@@ -11,7 +12,7 @@ import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 function Contact(){
     return(
         <>
-        <>Contact Me</>
+        <TypedText text='Contact Me'/>
         <div className='contact-container'>
             <div className='text-area'>
                 <img/> enochchigbu@gmail.com

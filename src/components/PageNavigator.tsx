@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import { useState } from 'react';
 import { Home, Skills, Contact, About, Projects } from '../pages';
 import './styles/PageNavigator.css';
 /**
@@ -6,7 +6,7 @@ import './styles/PageNavigator.css';
  * 
  * This is the component that handles page selection and switching.
  * 
- * 5 States ( Name : Function ):
+ * 5 States ( Name : Function )
  *      - Home : The Home page, first page a user sees
  *      - About : A page containing background info
  *      - Contact : Page that contains my contact info

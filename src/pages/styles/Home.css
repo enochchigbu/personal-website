@@ -17,3 +17,7 @@
     height: auto;
     border-radius: 20px;
 }
+
+.pfp-container {
+    flex: 1;
+}

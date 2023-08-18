@@ -9,7 +9,7 @@ function Home (){
                 Hi Everyone!
                 <p>My name is Enoch</p>
             </div>
-            <div style={{ flex:1 }}>
+            <div className='pfp-container'>
                 <img className='profile-pic' src={selfPortrait} alt='self portrait'></img>
             </div>
         </div>  
