@@ -2,6 +2,7 @@
     justify-content: center;
     display: flex;
     padding: 10px;
+    padding-bottom: 25px;
 }
 
 .non-selected {

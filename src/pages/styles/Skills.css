@@ -6,7 +6,12 @@
     padding: 50px;
 }
 
-img {
+.grid-container > div > img {
     height: 70px;
     width: auto;
+}
+
+.skills-header {
+    font-size: 30px;
+    padding-top: 30px;
 }
