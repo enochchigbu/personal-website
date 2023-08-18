@@ -80,3 +80,8 @@
     height: auto;
     mix-blend-mode: multiply;
 }
+
+.contact-title {
+    font-size: 50px;
+
+}

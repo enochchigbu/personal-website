@@ -12,7 +12,11 @@ import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 function Contact(){
     return(
         <>
-        <TypedText text='Contact Me'/>
+        <text className='contact-title'>
+            <TypedText 
+            text = "Contact Me"
+            time={1000}/>
+        </text>
         <div className='contact-container'>
             <div className='text-area'>
                 <img/> enochchigbu@gmail.com

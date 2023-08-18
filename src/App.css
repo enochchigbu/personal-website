@@ -7,11 +7,8 @@ html, body {
   height: 100vh;
   text-align: center;
   justify-content: center;
-  font-family: serif;
+  font-family: Helvetica;
+  font-weight: bold;
   color: white;
-}
-
-.page-header::before {
-  color:red
 }
 
