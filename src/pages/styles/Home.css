@@ -12,6 +12,11 @@
     flex: 1.5;
 }
 
+.intro-text-paragraph {
+    font-size: 30px;
+    animation: fadeInIntroParagraph 5s;
+}
+
 .profile-pic {
     width: 150px;
     height: auto;
@@ -20,4 +25,14 @@
 
 .pfp-container {
     flex: 1;
+}
+
+.name-text {
+    font-family: cursive;
+}
+
+@keyframes fadeInIntroParagraph {
+    0% { opacity: 0; }
+    50% {opacity: 0;}
+    100% { opacity: 1; }
 }

@@ -12,14 +12,14 @@ import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 function Contact(){
     return(
         <>
-        <text className='contact-title'>
-            <TypedText 
-            text = "Contact Me"
-            time={1000}/>
-        </text>
         <div className='contact-container'>
             <div className='text-area'>
-                <img/> enochchigbu@gmail.com
+                <text className='contact-title'>
+                    Contact Me
+                </text>
+                <div className='email-container'>
+
+                </div>
                 <div>
                     <button className='insta-button'
                     onClick={e => window.open("https://instagram.com/enoch.chigbu")}>

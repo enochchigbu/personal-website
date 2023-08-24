@@ -13,9 +13,8 @@ import React, { useState, useEffect } from 'react';
  * @returns string
  */
 
-const TypedText = ({text, time} : {text : string, time? : number}) => {
+function TypedText ({text, time} : {text : string, time? : number}) {
     if (time === undefined) { time = 100 }
-
     const [revealedLetters, setRevealedLetters] = useState<number>(0);
     const interval = setInterval(() => setRevealedLetters(l  => l + 1), time);
 

@@ -1,8 +1,19 @@
-.nav-container {
-    justify-content: center;
+.header-container {
     display: flex;
+}
+
+.logo-container {
+    flex: 1;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.nav-container {
+    flex: 2;
+    justify-content: center;
     padding: 10px;
     padding-bottom: 25px;
+    float: right;
 }
 
 .non-selected {

@@ -22,27 +22,32 @@ function PageNavigatior() {
     const [currPage, setPage] = useState<page>('Home');
     return(
         <>
-        <div className='nav-container'>
-            <button className={currPage === 'Home' ? 'selected' : 'non-selected'} 
-            onClick = {e => setPage('Home')}>
-                Home
-            </button>
-            <button className={currPage === 'About' ? 'selected' : 'non-selected'}
-            onClick = {e => setPage('About')}>
-                About Me
-            </button>
-            <button className={currPage === 'Skills' ? 'selected' : 'non-selected'}
-            onClick = {e => setPage('Skills')}>
-                My Skills
-            </button>
-            <button className={currPage === 'Contact' ? 'selected' : 'non-selected'}
-            onClick = {e => setPage('Contact')}>
-                Contact Me
-            </button >
-            {/* <button className={currPage === 'Projects' ? 'selected-button' : ''}
-            onClick = {e => setPage('Projects')}>
-                Projects
-            </button> */}
+        <div className='header-container'>
+            <div className='logo-container'>
+               <text>enochchigbu.dev</text>
+            </div>
+            <div className='nav-container'>
+                <button className={currPage === 'Home' ? 'selected' : 'non-selected'} 
+                onClick = {e => setPage('Home')}>
+                    Home
+                </button>
+                <button className={currPage === 'About' ? 'selected' : 'non-selected'}
+                onClick = {e => setPage('About')}>
+                    About Me
+                </button>
+                <button className={currPage === 'Skills' ? 'selected' : 'non-selected'}
+                onClick = {e => setPage('Skills')}>
+                    My Skills
+                </button>
+                <button className={currPage === 'Contact' ? 'selected' : 'non-selected'}
+                onClick = {e => setPage('Contact')}>
+                    Contact Me
+                </button >
+                {/* <button className={currPage === 'Projects' ? 'selected-button' : ''}
+                onClick = {e => setPage('Projects')}>
+                    Projects
+                </button> */}
+            </div>
         </div>
         <div>
             <RenderPage p = {currPage}/>
