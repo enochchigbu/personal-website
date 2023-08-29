@@ -4,7 +4,7 @@ import './styles/About.css';
 function About(){
     return(
         <div>
-            About Me
+            <header>About Me</header>
         </div>
     )
 }
