@@ -1,0 +1,20 @@
+.experience-cards  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;            
+    gap: 1em;
+    padding: 1em;                           
+}
+
+.subheader-logo {
+    height: 1.5em; 
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .experience-cards {
+        display: block;
+    }
+}

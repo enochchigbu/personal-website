@@ -1,42 +1,138 @@
+/* General Styles */
 .header-container {
     display: flex;
-    padding-bottom: 40px
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav or hamburger */
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
     flex: 1;
-    padding: 20px;
     font-size: 30px;
+    color: white;
 }
 
 .nav-container {
     flex: 2;
+    display: flex;
     justify-content: center;
     padding: 10px;
     float: right;
 }
 
-.non-selected {
-    font-size : 20px;
-    color:white;
+.nav-container > button {
+    font-size: 20px;
+    font-family: "Courier New", monospace;
+    color: white;
     background: transparent;
     transition-duration: 0.5s;
-    border: white;
-    padding: 10px 20px 10px 20px;
+    border: none;
+    padding: 10px 20px;
     margin: 5px;
+    cursor: pointer;
+}
+
+.non-selected {
+    color: white;
+    background: transparent;
 }
 
 .selected {
-    font-size : 20px;
-    color: rgb(0,0,56);
+    color: rgb(0, 0, 56);
     background-color: white;
-    transition-duration: 0.5s;
-    border: white;
-    padding: 10px 20px 10px 20px;
-    margin: 5px;
+    border-radius: 5px;
 }
 
+/* Hover Effect for Buttons */
 .nav-container > button:hover {
     background-color: white;
-    color: rgb(0,0,56);
+    color: rgb(0, 0, 56);
+    border-radius: 5px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Changed from left to right */
+    height: 100vh;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(100%); /* Hidden by default, now pushing from right */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother animation */
+    z-index: 1000;
+    box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.3); /* Adjusted shadow for right side */
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+.sidebar button {
+    font-size: 18px;
+    color: white;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+    font-family: "Courier New", monospace;
+}
+
+.sidebar button:hover {
+    color: rgb(0, 0, 56);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.close-sidebar {
+    align-self: flex-end;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    height: 5em;
+}
+
+.social-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 2em;
+    margin-top: 2em;
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-10px)
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        display: none; /* Hide navigation buttons */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
 }

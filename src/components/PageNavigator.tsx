@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Home, Skills, Contact, About, Projects } from '../pages';
+import { Home, Skills, Contact, Experience, Projects } from '../pages';
 import './styles/PageNavigator.css';
 /**
  * Page Navigator Component
@@ -10,56 +10,93 @@ import './styles/PageNavigator.css';
  *      - Home : The Home page, first page a user sees
  *      - About : A page containing background info
  *      - Contact : Page that contains my contact info
- *      - Skills : Page that displays my technical skiils
+ *      - Experience : Page that displays my technical skiils
  *      - Projects : Page that displays the projects I have made
  *          
  *      Note: This can be added later after you do more projects
  */
 
-type page = "Home" | "Skills" | "About" | "Contact" | "Projects"
+type page = "Home" | "Experience" | "Skills" | "Contact" | "Projects"
 
 function PageNavigatior() {
     const [currPage, setPage] = useState<page>('Home');
-    return(
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+    return (
         <>
-        <div className='header-container'>
-            <div className='logo-container'>
-               <text>enochchigbu.dev</text>
+            <div className="header-container">
+                <div className="logo-container">
+                    <button
+                        onClick={() => window.open('https://github.com/enochchigbu', '_blank')}
+                        className="social-button"
+                    >
+                        <img src="https://preview.redd.it/a-proposal-for-a-new-r-github-logo-v0-wl8v8rmmir7d1.png?width=1080&crop=smart&auto=webp&s=28e401abba4695e218c473e8a3c2f7f1579b1d5f" 
+                            alt="GitHub" className="icon" />
+                    </button>
+                    <button
+                        onClick={() => window.open('https://linkedin.com/in/enochchigbu', '_blank')}
+                        className="social-button"
+                    >
+                        <img src="https://img.icons8.com/m_rounded/512/FFFFFF/linkedin.png" 
+                            alt="LinkedIn" className="icon" />
+                    </button>
+                    <button
+                        onClick={() => window.open('https://instagram.com/enoch.chigbu', '_blank')}
+                        className="social-button"
+                    >
+                        <img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new.png" alt="Instagram" className="icon" />
+                    </button>
+                </div>
+                <div className="hamburger-menu" onClick={() => setSidebarOpen(!isSidebarOpen)}>
+                    ☰
+                </div>
+                
+                <div className="nav-container">
+                    <button className={currPage === 'Home' ? 'selected' : 'non-selected'}onClick={() => setPage('Home')}>
+                        Home
+                    </button>
+                    <button className={currPage === 'Experience' ? 'selected' : 'non-selected'} onClick={() => setPage('Experience')}>
+                        Experience
+                    </button>
+                    <button className={currPage === 'Skills' ? 'selected' : 'non-selected'} onClick={() => setPage('Skills')}>
+                        Skills
+                    </button>
+                    <button className={currPage === 'Contact' ? 'selected' : 'non-selected'} onClick={() => setPage('Contact')}>
+                        Contact
+                    </button>
+                </div>
             </div>
-            <div className='nav-container'>
-                <button className={currPage === 'Home' ? 'selected' : 'non-selected'} 
-                onClick = {e => setPage('Home')}>
-                    Home
-                </button>
-                <button className={currPage === 'About' ? 'selected' : 'non-selected'}
-                onClick = {e => setPage('About')}>
-                    About Me
-                </button>
-                <button className={currPage === 'Skills' ? 'selected' : 'non-selected'}
-                onClick = {e => setPage('Skills')}>
-                    My Skills
-                </button>
-                <button className={currPage === 'Contact' ? 'selected' : 'non-selected'}
-                onClick = {e => setPage('Contact')}>
-                    Contact Me
-                </button >
-                {/* <button className={currPage === 'Projects' ? 'selected-button' : ''}
-                onClick = {e => setPage('Projects')}>
-                    Projects
-                </button> */}
+            
+            {isSidebarOpen && (
+                <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                    <button onClick={() => setSidebarOpen(false)} className="close-sidebar">
+                        x
+                    </button>
+                    <button onClick={() => { setPage('Home'); setSidebarOpen(false); }}>
+                        Home
+                    </button>
+                    <button onClick={() => { setPage('Experience'); setSidebarOpen(false); }}>
+                        Experience
+                    </button>
+                    <button onClick={() => { setPage('Skills'); setSidebarOpen(false); }}>
+                        Skills
+                    </button>
+                    <button onClick={() => { setPage('Contact'); setSidebarOpen(false); }}>
+                        Contact
+                    </button>
+                </div>
+            )}
+            <div>
+                <RenderPage p={currPage} />
             </div>
-        </div>
-        <div>
-            <RenderPage p = {currPage}/>
-        </div>
         </>
-    )
+    );
 }
 
 function RenderPage({ p } : {p : page}) {
     switch(p){
-        case 'About':
-            return <About/>
+        case 'Experience':
+            return <Experience/>
 
         case 'Contact':
             return <Contact/>

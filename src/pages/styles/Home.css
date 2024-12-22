@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    padding: 20px;
 }
 
 .intro-text {
@@ -12,15 +11,45 @@
     flex: 1.5;
 }
 
-.intro-text-paragraph {
-    font-size: 30px;
-    animation: fadeInIntroParagraph 5s;
+.intro-text-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.profile-pic {
+.intro-text-paragraph {
+    padding-top: 20px;
+    font-size: 25px;
+    flex: 1.5;
+}
+
+.intro-text-portraits {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text-paragraph, .intro-text-portraits {
+    animation: fadeInIntroParagraph 2s ease-in-out forwards;
+}
+
+.portrait-pic {
+    width: 300px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.nature-pic {
     width: 150px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.portrait-pic, .nature-pic {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
 }
 
 .pfp-container {
@@ -35,4 +64,11 @@
     0% { opacity: 0; }
     50% {opacity: 0;}
     100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .intro-text-body {
+        flex-direction: column;
+    }
 }
