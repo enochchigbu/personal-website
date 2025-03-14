@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Home, Skills, Contact, Experience, Projects } from '../pages';
+import { resume } from '../assets';
 import './styles/PageNavigator.css';
 /**
  * Page Navigator Component
@@ -18,7 +19,7 @@ import './styles/PageNavigator.css';
 
 type page = "Home" | "Experience" | "Skills" | "Contact" | "Projects"
 
-function PageNavigatior() {
+const PageNavigatior: React.FC = () => {
     const [currPage, setPage] = useState<page>('Home');
     const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -58,12 +59,13 @@ function PageNavigatior() {
                     <button className={currPage === 'Experience' ? 'selected' : 'non-selected'} onClick={() => setPage('Experience')}>
                         Experience
                     </button>
-                    <button className={currPage === 'Skills' ? 'selected' : 'non-selected'} onClick={() => setPage('Skills')}>
-                        Skills
+                    {/* <button className={currPage === 'Projects' ? 'selected' : 'non-selected'} onClick={() => setPage('Projects')}>
+                        Projects
                     </button>
                     <button className={currPage === 'Contact' ? 'selected' : 'non-selected'} onClick={() => setPage('Contact')}>
                         Contact
-                    </button>
+                    </button> */}
+                    <button onClick={() => window.open(resume)}> Resume </button>
                 </div>
             </div>
             
@@ -78,12 +80,13 @@ function PageNavigatior() {
                     <button onClick={() => { setPage('Experience'); setSidebarOpen(false); }}>
                         Experience
                     </button>
-                    <button onClick={() => { setPage('Skills'); setSidebarOpen(false); }}>
-                        Skills
+                    {/* <button onClick={() => { setPage('Projects'); setSidebarOpen(false); }}>
+                        Projects
                     </button>
                     <button onClick={() => { setPage('Contact'); setSidebarOpen(false); }}>
                         Contact
-                    </button>
+                    </button> */}
+                    <button onClick={() => window.open(resume)}> Resume </button>
                 </div>
             )}
             <div>

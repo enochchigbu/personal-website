@@ -15,13 +15,13 @@ const Experience = () => {
                                 src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
                                 alt="Google Logo" 
                                 className='subheader-logo'
-                            />- March 2025
+                            />- April 2025
                         </>
                     }
                     description="Working in NYC. Contact me if you would like to connect!"
                 />
                 <ExperienceCard
-                    header="Software Engineer Intern"
+                    header="Software Engineering Intern"
                     subHeader={
                         <>
                             <img 

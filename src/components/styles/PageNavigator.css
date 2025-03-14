@@ -10,16 +10,14 @@
 
 .logo-container {
     flex: 1;
-    font-size: 30px;
     color: white;
 }
 
 .nav-container {
-    flex: 2;
+    flex: 1.5;
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    float: right;
+    justify-content: right;
+    margin-right: 2em;
 }
 
 .nav-container > button {
@@ -30,7 +28,7 @@
     transition-duration: 0.5s;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 1em;
     cursor: pointer;
 }
 

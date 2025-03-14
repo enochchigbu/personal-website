@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './styles/Skills.css';
-import { pythonLogo, javaLogo, typescriptLogo,
-         angularLogo, reactLogo, htmlCssLogo } from '../assets';
+// import { pythonLogo, javaLogo, typescriptLogo,
+//          angularLogo, reactLogo, htmlCssLogo } from '../assets';
 
 function Skills(){
     return(
         <>
         <text className = 'skills-header'> My Skills </text>
-        <div className='grid-container'>
+        {/* <div className='grid-container'>
             <div>
                 <img src={pythonLogo} alt='python-logo'/>
                 <p> </p>
@@ -27,8 +27,8 @@ function Skills(){
             <div>
                 <img src={angularLogo} alt='angular-logo'/>
             </div>
-        </div>
-        </>
+        </div>*/}
+        </> 
     )
 }
 

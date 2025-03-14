@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { selfPortrait, naturePng } from '../assets';
+import { selfPortrait } from '../assets';
 import './styles/Home.css';
 import { TypedText } from '../components';
 
@@ -10,20 +10,21 @@ function Home (){
     return(
         <div className='home-container'>
             <div className='intro-text'>
-                <TypedText text='Hello, my name is Enoch' time={100} onComplete={() => setTypedTextSurfaced(true)}/>
+                <TypedText texts={['Hello, my name is Enoch']} time={100} onComplete={() => setTypedTextSurfaced(true)}/>
                 {typedTextSurfaced && (
                     <div className = 'intro-text-body'>
-                        <p className='intro-text-paragraph'>
-                            I'm a software engineer who is passionate about creating scalable, efficient, and secure software solutions.
-                            <br/>
-                            <br/>
-                            Outside of coding, I enjoy exploring the intersections of cybersecurity, quantum computing and 
-                            machine learning, working on side hustles, exploring nature, and playing basketball.
-                        </p>
+                        <div className='intro-text-paragraph'>
+                            <text className='typed-text-heading'><TypedText texts={['Programmer', 'Problem Solver', 'Software Engineer.']} time={100}/></text>
+                            <br />
+                            <br />
+                            <div className="contact-info">
+                                <a href="mailto:enochchigbu@email.com">enochchigbu@gmail.com</a>
+                                <a href="tel:+19167935062">+1 916-793-5062</a>
+                            </div>
+                        </div>
 
                         <div className='intro-text-portraits'>
                             <img className="portrait-pic" src={selfPortrait} alt="" />
-                            {/* <img className="nature-pic" src={naturePng} alt="" /> */}
                         </div>
                     </div>
                 )}
