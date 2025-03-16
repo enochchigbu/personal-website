@@ -1,5 +1,3 @@
-import React from 'react';
-import { useState, Component } from 'react';
 import { PageNavigator } from './components';
 import './App.css';
 
