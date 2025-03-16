@@ -1,6 +1,7 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
+//import { Component, useState } from 'react';
 import './styles/Contact.css';
-import { TypedText } from '../components';
+//import { TypedText } from '../components';
 import { linkedInLogo, githubLogo, instragramLogo } from '../assets';
 
 /**
@@ -65,9 +66,8 @@ function Contact(){
 }
 
 
-function acceptForm({name, email, message } : 
-    {name: string, email: string, message: string}){
-    
-}
+// function acceptForm({name, email, message } : 
+//     {name: string, email: string, message: string}){  
+// }
 
 export default Contact;

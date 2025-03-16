@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/Skills.css';
+// import { Component } from 'react';
 // import { pythonLogo, javaLogo, typescriptLogo,
 //          angularLogo, reactLogo, htmlCssLogo } from '../assets';
 
