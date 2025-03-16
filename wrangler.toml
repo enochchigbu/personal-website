@@ -1,0 +1,4 @@
+name = "enochchigbu"
+type = "typescript"
+workers_dev = false
+route = "enochchigbu.com/*"  # Route for the Worker in production (optional)
