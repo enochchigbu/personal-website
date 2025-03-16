@@ -2,3 +2,4 @@ name = "enochchigbu"
 main = "src/index.tsx"
 workers_dev = false
 route = "enochchigbu.com/*"  # Route for the Worker in production (optional)
+compatibility_date = "2025-03-16"
